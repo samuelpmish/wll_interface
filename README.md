@@ -17,7 +17,9 @@ FetchContent_Declare(
   GIT_TAG main
 )
 FetchContent_MakeAvailable(wll_interface)
+```
 
+and link relevant targets against `wll_interface`
 ...cmake
 # needs to be a shared library for Mathematica to load it
 add_library(my_library SHARED ...)
