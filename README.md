@@ -14,6 +14,7 @@ put this in your CMakeLists.txt somewhere
 FetchContent_Declare(
   wll_interface
   GIT_REPOSITORY https://github.com/samuelpmish/wll_interface.git
+  GIT_TAG main
 )
 FetchContent_MakeAvailable(wll_interface)
 
