@@ -19,8 +19,9 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(wll_interface)
 ```
 
+
 and link relevant targets against `wll_interface`
-...cmake
+```cmake
 # needs to be a shared library for Mathematica to load it
 add_library(my_library SHARED ...)
 target_link_libraries(my_library PUBLIC wll_interface)
