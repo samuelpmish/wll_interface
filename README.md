@@ -5,6 +5,7 @@ The real credit goes to https://github.com/njpipeorgan/wll-interface, this repo 
 
 - CMake support
 - small changes to support Apple-clang compilers
+- headers from Mathematica 13.2
 
 # Integration into existing CMake project
 
