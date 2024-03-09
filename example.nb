@@ -1,0 +1,76 @@
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[         0,          0]
+NotebookDataLength[      2624,         75]
+NotebookOptionsPosition[      1933,         52]
+NotebookOutlinePosition[      2330,         68]
+CellTagsIndexPosition[      2287,         65]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"note", ":", " ", 
+    RowBox[{
+    "tell", " ", "Mathematica", " ", "to", " ", "look", " ", "for", " ", 
+     "shared", " ", "libraries", " ", "in", " ", "our", " ", "CMake", " ", 
+     "build", " ", "directory"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"AppendTo", "[", 
+    RowBox[{"$LibraryPath", ",", " ", 
+     RowBox[{"FileNameJoin", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"NotebookDirectory", "[", "]"}], ",", " ", "\"\<build\>\""}], 
+       "}"}], "]"}]}], "]"}], ";"}]}]], "Input",
+ CellChangeTimes->{{3.918987178723609*^9, 3.918987222709041*^9}, {
+  3.9189872688174047`*^9, 3.918987380130584*^9}},
+ CellLabel->"In[31]:=",ExpressionUUID->"71c52cc8-0a0a-4324-a5e8-b21005c410e3"],
+
+Cell[BoxData[
+ RowBox[{"mylib", " ", "=", " ", 
+  RowBox[{"LibraryLoad", "[", "\"\<libexample\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.918987168868512*^9, 3.918987176806857*^9}},
+ CellLabel->"In[32]:=",ExpressionUUID->"af98dc8b-5b0d-42dc-9323-ab2fb901d555"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"multiply", "=", 
+   RowBox[{"LibraryFunctionLoad", "[", 
+    RowBox[{"mylib", ",", "\"\<wll_multiply\>\"", ",", 
+     RowBox[{"{", 
+      RowBox[{"Real", ",", "Integer"}], "}"}], ",", "Real"}], "]"}]}], 
+  ";"}], "\n", 
+ RowBox[{"multiply", "[", 
+  RowBox[{"2.33", ",", "5"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.918986778449153*^9, 3.918986778450913*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"0a5d6e10-e9b0-415b-9249-f9976e4e9d52"]
+},
+WindowSize->{808, 731},
+WindowMargins->{{47, Automatic}, {Automatic, 18}},
+FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"74a17e94-0978-4282-a868-5bada49d5f2c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[400, 13, 785, 18, 52, "Input",ExpressionUUID->"71c52cc8-0a0a-4324-a5e8-b21005c410e3"],
+Cell[1188, 33, 263, 4, 30, "Input",ExpressionUUID->"af98dc8b-5b0d-42dc-9323-ab2fb901d555"],
+Cell[1454, 39, 475, 11, 52, "Input",ExpressionUUID->"0a5d6e10-e9b0-415b-9249-f9976e4e9d52"]
+}
+]
+*)
+

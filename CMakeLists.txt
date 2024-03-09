@@ -7,3 +7,8 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 file(GLOB headers ${PROJECT_SOURCE_DIR}/cpp/*.hpp)
 add_library(wll_interface INTERFACE ${headers})
 target_include_directories(wll_interface INTERFACE ${PROJECT_SOURCE_DIR}/include)
+
+if (WLL_INTERFACE_BUILD_EXAMPLE) 
+  add_library(example SHARED example.cpp)
+  target_link_libraries(example PUBLIC wll_interface)
+endif()
