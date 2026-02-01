@@ -1469,7 +1469,7 @@ public:
         if(this == &other) return *this;
         WLL_ASSERT(this->access_ != memory_type::empty);
         WLL_ASSERT(other.access_ != memory_type::empty);
-        WLL_ASSERT((void*)this->values != (void*)other.values_);
+        WLL_ASSERT((void*)this->values_ != (void*)other.values_);
         if (!(this->_has_same_dims(other.dims_.data())))
             throw library_dimension_error(WLL_CURRENT_FUNCTION + "\nSparse arrays have different dimensions.");
         if (this->access_ == memory_type::shared)
@@ -1496,7 +1496,7 @@ public:
         if(this == &other) return *this;
         WLL_ASSERT(this->access_ != memory_type::empty);
         WLL_ASSERT(other.access_ != memory_type::empty);
-        WLL_ASSERT((void*)this->values != (void*)other.values_);
+        WLL_ASSERT((void*)this->values_ != (void*)other.values_);
         if (!(this->_has_same_dims(other.dims_.data())))
             throw library_dimension_error(WLL_CURRENT_FUNCTION + "\nSparse arrays have different dimensions.");
         if (this->access_ == memory_type::shared)
